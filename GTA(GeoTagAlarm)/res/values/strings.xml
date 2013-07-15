@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GTA(GeoTagAlarm)</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Selamat Datang di Aplikasi Geo Tag Alarm</string>
+    <string name="btnLokasi">Lokasi Sekarang</string>
+    <string name="btnCari">Cari Lokasi Tujuan</string>
+    <string name="btnExit">Keluar</string>
+
+</resources>
