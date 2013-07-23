@@ -10,10 +10,36 @@ import android.widget.Button;
 
 public class MainActivity extends Activity {
 
+	Button sekarang, cari;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+
+		/* Intent Lokasi Sekarang */
+		sekarang = (Button) findViewById(R.id.btn1);
+
+		sekarang.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				menuSekarang(sekarang);
+			}
+		});
+
+		/* Intent Cari Lokasi */
+		cari = (Button) findViewById(R.id.btn2);
+
+		cari.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				menuCari(cari);
+			}
+		});
 
 		// fungsi button keluar
 		Button btnkeluar = (Button) this.findViewById(R.id.btnExit);
@@ -24,20 +50,17 @@ public class MainActivity extends Activity {
 			}
 		});
 
-		Button Button1 = (Button) findViewById(R.id.btn1);
-		// set OnClickListener event to btnOpen
-		Button1.setOnClickListener(new View.OnClickListener() {
-			public void onClick(View v) {
-				callIntent();
-			}
-		});
+	}
+
+	public void menuSekarang(View view) {
+		Intent sekarang = new Intent(this, MapSekarang.class);
+		startActivity(sekarang);
 
 	}
 
-	// method for call SecondActivity
-	public void callIntent() {
-		Intent i = new Intent(this, MapSekarang.class);
-		startActivity(i);
+	public void menuCari(View view) {
+		Intent cari = new Intent(this, MapCari.class);
+		startActivity(cari);
 	}
 
 	@Override

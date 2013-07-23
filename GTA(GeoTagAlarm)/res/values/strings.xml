@@ -7,5 +7,7 @@
     <string name="btnLokasi">Lokasi Sekarang</string>
     <string name="btnCari">Cari Lokasi Tujuan</string>
     <string name="btnExit">Keluar</string>
+    <string name="hint">Cari Lokasi</string>
+    <string name="find">Cari</string>
 
 </resources>

@@ -37,6 +37,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MapSekarang"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".MapCari"
+            android:label="@string/app_name" >
+        </activity>
 
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
